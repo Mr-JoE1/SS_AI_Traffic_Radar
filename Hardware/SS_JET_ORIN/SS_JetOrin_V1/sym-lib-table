@@ -1,0 +1,9 @@
+(sym_lib_table
+  (lib (name "2309413-1")(type "KiCad")(uri "${KIPRJMOD}/EXT-LIB/DDR4_DIMM_260P/2309413-1.kicad_sym")(options "")(descr ""))
+  (lib (name "DMN26D0UFB4-7")(type "KiCad")(uri "${KIPRJMOD}/EXT-LIB/DMN26D0UFB4-7/DMN26D0UFB4-7.kicad_sym")(options "")(descr ""))
+  (lib (name "SN74LV1T125DCKR")(type "KiCad")(uri "${KIPRJMOD}/EXT-LIB/SN74LV1T125DCKR/SN74LV1T125DCKR.kicad_sym")(options "")(descr ""))
+  (lib (name "ESD9L5.0ST5G")(type "KiCad")(uri "${KIPRJMOD}/EXT-LIB/ESD9L5.0ST5G/ESD9L5.0ST5G.kicad_sym")(options "")(descr ""))
+  (lib (name "TS3USB30ERSWR")(type "KiCad")(uri "${KIPRJMOD}/EXT-LIB/TS3USB30ERSWR/TS3USB30ERSWR.kicad_sym")(options "")(descr ""))
+  (lib (name "TXB0108PWR")(type "KiCad")(uri "${KIPRJMOD}/EXT-LIB/TXB0108PWR/TXB0108PWR.kicad_sym")(options "")(descr ""))
+  (lib (name "TXB0302DQMR")(type "KiCad")(uri "${KIPRJMOD}/EXT-LIB/TXB0302DQMR/TXB0302DQMR.kicad_sym")(options "")(descr ""))
+)

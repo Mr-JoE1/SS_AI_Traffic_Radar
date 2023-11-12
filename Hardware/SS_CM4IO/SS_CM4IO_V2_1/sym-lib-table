@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name "CM4IO")(type "KiCad")(uri "${KIPRJMOD}/CM4IO.kicad_sym")(options "")(descr ""))
+  (lib (name "TPS5450DDAR")(type "KiCad")(uri "${KIPRJMOD}/EXT_LIB/TPS5450DDAR.kicad_sym")(options "")(descr ""))
+  (lib (name "DALC208SC6")(type "KiCad")(uri "${KIPRJMOD}/EXT_LIB/DALC208SC6/DALC208SC6.kicad_sym")(options "")(descr ""))
+  (lib (name "SIM-E-MFF2-GL-250")(type "KiCad")(uri "${KIPRJMOD}/EXT_LIB/SIM-E-MFF2-GL-250/SIM-E-MFF2-GL-250.kicad_sym")(options "")(descr ""))
+)

@@ -1,0 +1,10 @@
+(fp_lib_table
+  (lib (name "CM4IO")(type "KiCad")(uri "${KIPRJMOD}/CM4IO.pretty")(options "")(descr ""))
+  (lib (name "EXT_LIB")(type "KiCad")(uri "${KIPRJMOD}/EXT_LIB")(options "")(descr ""))
+  (lib (name "Kemet _3760_H")(type "KiCad")(uri "${KIPRJMOD}/EXT_LIB/ul_T523H477M016APE070/KiCAD/2023-05-05_17-56-41/Kemet _3760_H.pretty")(options "")(descr ""))
+  (lib (name "DALC208SC6")(type "KiCad")(uri "${KIPRJMOD}/EXT_LIB/DALC208SC6")(options "")(descr ""))
+  (lib (name "SIM-E-MFF2-GL-250")(type "KiCad")(uri "${KIPRJMOD}/EXT_LIB/SIM-E-MFF2-GL-250")(options "")(descr ""))
+  (lib (name "DTC143ZEBTL")(type "KiCad")(uri "${KIPRJMOD}/EXT_LIB/DTC143ZEBTL")(options "")(descr ""))
+  (lib (name "Quectel_EG25-G_Mini_PCIe")(type "KiCad")(uri "${KIPRJMOD}/Quectel_EG25-G_Mini_PCIe.pretty")(options "")(descr ""))
+  (lib (name "DF40C-100DS-0")(type "KiCad")(uri "${KIPRJMOD}/EXT_LIB/DF40C-100DS-0.4V_51")(options "")(descr ""))
+)

@@ -1,0 +1,12 @@
+{
+    "port": "/dev/ttyACM0",
+    "baudrate": 9600,
+    "parity": "none",
+    "stopbits": 1,
+    "bytesize": 8,
+    "timeout": 1,
+    "board": {
+        "boardName": "name",
+        "version": "version"
+    }
+}

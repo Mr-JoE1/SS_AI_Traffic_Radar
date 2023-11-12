@@ -1,0 +1,225 @@
+
+(rules PCB SS_CM4IO_V2
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 62)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.3)
+    )
+    (layer_rule In1.Cu
+      (active off)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.3)
+    )
+    (layer_rule In2.Cu
+      (active off)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.3)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.7)
+    )
+  )
+  (rule
+    (width 130.0)
+    (clear 200.2)
+    (clear 65.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+    (clear 130.2 (type 100R_100R))
+  )
+  (padstack "Via[0-3]_450:250_um"
+    (shape
+      (circle F.Cu 450.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 450.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 450.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 450.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-3]_450:250_um" "Via[0-3]_450:250_um" default
+  )
+  (via 
+    "Via[0-3]_450:250_um-kicad_default" "Via[0-3]_450:250_um" "kicad_default"
+  )
+  (via 
+    "Via[0-3]_450:250_um-100R" "Via[0-3]_450:250_um" 100R
+  )
+  (via 
+    "Via[0-3]_450:250_um-120R" "Via[0-3]_450:250_um" 120R
+  )
+  (via 
+    "Via[0-3]_450:250_um-12v" "Via[0-3]_450:250_um" 12v
+  )
+  (via 
+    "Via[0-3]_450:250_um-3v3" "Via[0-3]_450:250_um" 3v3
+  )
+  (via 
+    "Via[0-3]_450:250_um-5v" "Via[0-3]_450:250_um" 5v
+  )
+  (via 
+    "Via[0-3]_450:250_um-85R" "Via[0-3]_450:250_um" 85R
+  )
+  (via_rule
+    default "Via[0-3]_450:250_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-3]_450:250_um-kicad_default"
+  )
+  (via_rule
+    100R "Via[0-3]_450:250_um-100R"
+  )
+  (via_rule
+    120R "Via[0-3]_450:250_um-120R"
+  )
+  (via_rule
+    12v "Via[0-3]_450:250_um-12v"
+  )
+  (via_rule
+    3v3 "Via[0-3]_450:250_um-3v3"
+  )
+  (via_rule
+    5v "Via[0-3]_450:250_um-5v"
+  )
+  (via_rule
+    85R "Via[0-3]_450:250_um-85R"
+  )
+  (class default
+    GND "/4G_GSM/GSM_UART_RX" "/4G_GSM/GSM_UART_TX" "Net-(D4-Pad1)" "Net-(D5-Pad1)" "Net-(C3-Pad1)" "/CM4_MOD/RS+" "/CM4_MOD/RS-"
+    "unconnected-(U4-Pad2)" "Net-(C25-Pad2)" "unconnected-(U4-Pad4)" "unconnected-(U4-Pad5)" "Net-(C24-Pad2)" "Net-(C23-Pad2)" "/4G_GSM/USIM_VDD" "unconnected-(U4-Pad9)"
+    /PSUs/VSNS1 "/CM4_MOD/+1.8v" "/CM4_MOD/GPIO_VREF" "Net-(Q5-Pad3)" "Net-(R11-Pad1)" "Net-(C2-Pad2)" "/4G_GSM/USIM_DATA" "Net-(Q2-Pad3)"
+    "Net-(R5-Pad2)" "Net-(D3-Pad2)" "/4G_GSM/USIM_RST" "/4G_GSM/USIM_CLK" "Net-(R17-Pad2)" "/CM4_MOD/Activit_LED" "/CM4_MOD/RUN_PG" "Net-(J8-Pad7)"
+    "/CM4_MOD/nPWR_LED" "/CM4_MOD/RS485_RW" "/4G_GSM/LED_WWAN" "Net-(C9-Pad2)" "Net-(C9-Pad1)" "unconnected-(U1-Pad2)" "unconnected-(U1-Pad3)" "unconnected-(U1-Pad5)"
+    "/CM4_MOD/GPIO22" "/4G_GSM/GSM_PSU_DISABLE" "/CM4_MOD/GPIO19" "/4G_GSM/W_DISABLE" "/4G_GSM/GSM_PERST_CTL" "/4G_GSM/PERST" "unconnected-(IC1-Pad2)" "/CM4_MOD/nRPIBOOT"
+    "/CM4_MOD/EEPROM_nWP" "/CM4_MOD/AIN0" "/CM4_MOD/AIN1" "/CM4_MOD/GLOBAL_EN" "/CM4_MOD/WL_nDis" "/CM4_MOD/BT_nDis" "unconnected-(J5-Pad1)" "unconnected-(J5-Pad3)"
+    "unconnected-(J5-Pad5)" "unconnected-(J5-Pad6)" "unconnected-(J5-Pad7)" "unconnected-(J5-Pad16)" "unconnected-(J5-Pad17)" "unconnected-(J5-Pad19)" "/4G_GSM/GSM_UART_CTS" "unconnected-(J5-Pad24)"
+    "/4G_GSM/GSM_UART_RTS" "unconnected-(J5-Pad28)" "unconnected-(J5-Pad30)" "/4G_GSM/GSM_DTR" "unconnected-(J5-Pad32)" "unconnected-(J5-Pad33)" "unconnected-(J5-Pad36)" "unconnected-(J5-Pad38)"
+    "unconnected-(J5-Pad44)" "unconnected-(J5-Pad45)" "unconnected-(J5-Pad46)" "unconnected-(J5-Pad47)" "unconnected-(J5-Pad48)" "unconnected-(J5-Pad49)" "unconnected-(J5-Pad51)" "unconnected-(J5-PadMP)"
+    "unconnected-(Module1-Pad3)" "unconnected-(Module1-Pad4)" "unconnected-(Module1-Pad5)" "unconnected-(Module1-Pad6)" "unconnected-(Module1-Pad9)" "unconnected-(Module1-Pad10)" "unconnected-(Module1-Pad11)" "unconnected-(Module1-Pad12)"
+    "unconnected-(Module1-Pad15)" "unconnected-(Module1-Pad16)" "unconnected-(Module1-Pad17)" "unconnected-(Module1-Pad18)" "unconnected-(Module1-Pad19)" "/CM4_MOD/GPIO3" "unconnected-(Module1-Pad57)" "/CM4_MOD/GPIO2"
+    "unconnected-(Module1-Pad61)" "unconnected-(Module1-Pad63)" "unconnected-(Module1-Pad64)" "unconnected-(Module1-Pad67)" "unconnected-(Module1-Pad68)" "unconnected-(Module1-Pad69)" "unconnected-(Module1-Pad70)" "unconnected-(Module1-Pad72)"
+    "unconnected-(Module1-Pad73)" "unconnected-(Module1-Pad75)" "unconnected-(Module1-Pad76)" "/PCIe_CAM/CAM_GPIO" "unconnected-(Module1-Pad100)" "unconnected-(Module1-Pad101)" "/PCIe_CAM/PCIE_CLK_nREQ" "unconnected-(Module1-Pad103)"
+    "unconnected-(Module1-Pad104)" "unconnected-(Module1-Pad105)" "unconnected-(Module1-Pad106)" "/PCIe_CAM/PCIE_nRST" "unconnected-(Module1-Pad111)" "unconnected-(Module1-Pad143)" "unconnected-(Module1-Pad145)" "unconnected-(Module1-Pad146)"
+    "unconnected-(Module1-Pad147)" "unconnected-(Module1-Pad148)" "unconnected-(Module1-Pad149)" "unconnected-(Module1-Pad151)" "unconnected-(Module1-Pad152)" "unconnected-(Module1-Pad153)" "unconnected-(Module1-Pad154)" "unconnected-(Module1-Pad157)"
+    "unconnected-(Module1-Pad158)" "unconnected-(Module1-Pad159)" "unconnected-(Module1-Pad160)" "unconnected-(Module1-Pad163)" "unconnected-(Module1-Pad164)" "unconnected-(Module1-Pad165)" "unconnected-(Module1-Pad166)" "unconnected-(Module1-Pad169)"
+    "unconnected-(Module1-Pad170)" "unconnected-(Module1-Pad171)" "unconnected-(Module1-Pad172)" "unconnected-(Module1-Pad175)" "unconnected-(Module1-Pad176)" "unconnected-(Module1-Pad177)" "unconnected-(Module1-Pad178)" "unconnected-(Module1-Pad181)"
+    "unconnected-(Module1-Pad182)" "unconnected-(Module1-Pad183)" "unconnected-(Module1-Pad184)" "unconnected-(Module1-Pad187)" "unconnected-(Module1-Pad188)" "unconnected-(Module1-Pad189)" "unconnected-(Module1-Pad190)" "unconnected-(Module1-Pad193)"
+    "unconnected-(Module1-Pad194)" "unconnected-(Module1-Pad195)" "unconnected-(Module1-Pad196)" "unconnected-(Module1-Pad199)" "unconnected-(Module1-Pad200)" "unconnected-(J3-Pad18)" "/PCIe_CAM/ID_SD" "/PCIe_CAM/ID_SC"
+    "/CM4_MOD/SCA0" "/PCIe_CAM/CAM1_PWDN" "/CM4_MOD/SCL0" "/PCIe_CAM/CAM1_RESETB" "/CM4_MOD/EEP_SCL" "/CM4_MOD/EEP_SDA" "unconnected-(J11-Pad7)" "/CM4_MOD/CONSOL_TX"
+    "/CM4_MOD/CONSOL_RX" "unconnected-(J11-Pad11)" "unconnected-(J11-Pad12)" "/CM4_MOD/OPT3002_INT" "unconnected-(J11-Pad15)" "/CM4_MOD/ENV_BTN" "unconnected-(J11-Pad17)" "/CM4_MOD/OLED_DC"
+    "/CM4_MOD/SPI0_MOSI" "/CM4_MOD/SPI0_MISO" "/CM4_MOD/OLED_RESET" "/CM4_MOD/SPI0_SCLK" "/CM4_MOD/SPI0_CS" "unconnected-(J11-Pad26)" "/CM4_MOD/A271CH_RST_N" "unconnected-(J11-Pad31)"
+    "unconnected-(J11-Pad32)" "unconnected-(J11-Pad33)" "/CM4_MOD/HDC2010_DRDY" "unconnected-(J11-Pad36)" "unconnected-(J11-Pad37)" "unconnected-(J11-Pad38)" "/CM4_MOD/ENV_LED" "unconnected-(J9-Pad18)"
+    "unconnected-(J9-Pad22)" "unconnected-(J4-Pad1)" "unconnected-(J4-Pad3)" "unconnected-(J4-Pad5)" "unconnected-(J4-Pad6)" "unconnected-(J4-Pad8)" "unconnected-(J4-Pad10)" "unconnected-(J4-Pad12)"
+    "unconnected-(J4-Pad14)" "unconnected-(J4-Pad16)" "unconnected-(J4-Pad17)" "unconnected-(J4-Pad19)" "unconnected-(J4-Pad20)" "unconnected-(J4-Pad28)" "unconnected-(J4-Pad30)" "unconnected-(J4-Pad32)"
+    "unconnected-(J4-Pad36)" "unconnected-(J4-Pad38)" "unconnected-(J4-Pad42)" "unconnected-(J4-Pad44)" "unconnected-(J4-Pad45)" "unconnected-(J4-Pad46)" "unconnected-(J4-Pad47)" "unconnected-(J4-Pad48)"
+    "unconnected-(J4-Pad49)" "unconnected-(J4-Pad51)" "unconnected-(J4-PadMP)" "unconnected-(Module1-Pad62)" "unconnected-(J3-Pad11)" "unconnected-(J3-Pad12)" "unconnected-(J3-Pad14)" "unconnected-(J3-Pad15)"
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 130.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 130.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class 100R
+    "/PCIe_CAM/CAM1_D0_N" "/PCIe_CAM/CAM1_D0_P" "/PCIe_CAM/CAM1_D1_N" "/PCIe_CAM/CAM1_D1_P" "/PCIe_CAM/CAM1_C_N" "/PCIe_CAM/CAM1_C_P" "/PCIe_CAM/CAM1_D2_N" "/PCIe_CAM/CAM1_D2_P"
+    "/PCIe_CAM/CAM1_D3_N" "/PCIe_CAM/CAM1_D3_P" "/PCIe_CAM/CAM0_D0_N" "/PCIe_CAM/CAM0_C_P" "/PCIe_CAM/CAM0_C_N" "/PCIe_CAM/CAM0_D1_P" "/PCIe_CAM/CAM0_D1_N" "/PCIe_CAM/CAM0_D0_P"
+    (clearance_class 100R)
+    (via_rule 100R)
+    (rule
+      (width 127.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class 120R
+    "/CM4_MOD/RS485_RX" "/CM4_MOD/RS485_TX"
+    (clearance_class 120R)
+    (via_rule 120R)
+    (rule
+      (width 130.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class 12v
+    /+12v
+    (clearance_class 12v)
+    (via_rule 12v)
+    (rule
+      (width 1000.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class 3v3
+    "/4G_GSM/+3v3_GSM" "/+3v3_PCIe" "/CM4_MOD/CM4_3.3v"
+    (clearance_class 3v3)
+    (via_rule 3v3)
+    (rule
+      (width 2000.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class 5v
+    /+5R
+    (clearance_class 5v)
+    (via_rule 5v)
+    (rule
+      (width 3000.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class 85R
+    "/PCIe_CAM/PCIE_CLK_P" "/PCIe_CAM/PCIE_CLK_N" "/PCIe_CAM/PCIE_RX_P" "/PCIe_CAM/PCIE_RX_N" "/PCIe_CAM/PCIE_TX_P" "/PCIe_CAM/PCIE_TX_N"
+    (clearance_class 85R)
+    (via_rule 85R)
+    (rule
+      (width 130.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

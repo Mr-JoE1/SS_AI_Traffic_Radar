@@ -1,0 +1,16 @@
+# yolo-v8 configuration file
+path: /content/drive/MyDrive/ssEdge/data
+
+# Dataset configuration
+train: images/
+val: images/
+nc: 6 # Number of classes
+
+
+names:
+  0: seatbelt
+  1: no_seatbelt
+  2: phone_call
+  3: phone_messaging
+  4: turning
+  5: other_unsafe_action

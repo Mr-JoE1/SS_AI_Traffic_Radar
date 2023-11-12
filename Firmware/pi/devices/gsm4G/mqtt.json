@@ -1,0 +1,13 @@
+{
+    "client_idx":0,
+    "broker_address":"broker.hivemq.com",
+    "port":8883,
+    "authentication":false,
+    "username":"",
+    "password":"",
+    "qos":1,
+    "retain":0,
+    "ssl":false
+
+}
+
